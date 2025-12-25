@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pedro Matheus Araujo | Controls & Embedded Portfolio</title>
+  <meta name="description" content="Controls, embedded systems, and automation project portfolio." />
+  <style>
+    :root { --bg:#0b0f17; --card:#111827; --text:#e5e7eb; --muted:#a1a1aa; --accent:#60a5fa; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);line-height:1.5}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
+    header{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+    .name{font-size:28px;font-weight:700;margin:0}
+    .tag{margin:6px 0 0;color:var(--muted)}
+    .pillrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .pill{background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.25);color:var(--text);padding:7px 10px;border-radius:999px;font-size:13px}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-block;padding:10px 12px;border-radius:10px;background:var(--card);border:1px solid rgba(255,255,255,.08)}
+    .btn.primary{background:rgba(96,165,250,.18);border:1px solid rgba(96,165,250,.35)}
+    h2{font-size:18px;margin:34px 0 14px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}
+    @media (min-width:820px){ .card{grid-column:span 6} }
+    .ctitle{margin:0 0 6px;font-size:16px;font-weight:700}
+    .cmeta{color:var(--muted);font-size:13px;margin:0 0 10px}
+    .bullets{margin:10px 0 0;padding-left:18px;color:var(--text)}
+    .bullets li{margin:6px 0}
+    footer{margin-top:44px;color:var(--muted);font-size:13px}
+    .small{font-size:12px;color:var(--muted)}
+    .split{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="split">
+      <div>
+        <h1 class="name">Pedro Matheus Araujo</h1>
+        <p class="tag">Controls • Embedded Systems • Industrial Automation • GNC-leaning projects</p>
+
+        <div class="pillrow">
+          <span class="pill">PLC / DCS</span>
+          <span class="pill">C/C++</span>
+          <span class="pill">Python</span>
+          <span class="pill">MATLAB</span>
+          <span class="pill">Sensors + Actuation</span>
+          <span class="pill">Robotics (ABB RAPID)</span>
+        </div>
+
+        <div class="btnrow">
+          <a class="btn primary" href="#" target="_blank" rel="noreferrer">Resume (PDF)</a>
+          <a class="btn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="mailto:your@email.com">Email</a>
+        </div>
+        <p class="small" style="margin-top:10px;">
+          University of Michigan — BSE Electrical Engineering → Accelerated MSECE (Expected May 2027)
+        </p>
+      </div>
+    </header>
+
+    <h2>Selected Projects</h2>
+    <div class="grid">
+
+      <section class="card">
+        <h3 class="ctitle">Automatic Guitar Tuner (Closed-Loop DC Motor Control)</h3>
+        <p class="cmeta">Embedded controls • DSP frequency estimation • Real-time actuation</p>
+        <p>
+          Developed a closed-loop tuning system that estimates pitch from vibration sensing and drives a DC motor to correct string tension.
+        </p>
+        <ul class="bullets">
+          <li>Control logic converts pitch error → motor command with stable convergence on real hardware.</li>
+          <li>Handled nonlinearities such as backlash, dead zones, and noisy measurements through iterative tuning and testing.</li>
+          <li><a href="#" target="_blank" rel="noreferrer">Project report</a> · <a href="#" target="_blank" rel="noreferrer">Demo video</a> · <a href="#" target="_blank" rel="noreferrer">Code</a></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3 class="ctitle">Automated Gypsum Scraper-Blade System (Industrial Controls)</h3>
+        <p class="cmeta">PLC + DCS synchronization • Sensors + pneumatics • Live plant deployment</p>
+        <p>
+          Automated seam detection and blade avoidance on a conveyor belt scraper system to prevent belt damage and improve recovery.
+        </p>
+        <ul class="bullets">
+          <li>Integrated inductive sensing, pneumatic actuation via solenoid control, and manual override controls.</li>
+          <li>Added PLC logic through the DCS line to synchronize timing with belt speed and optimize performance.</li>
+          <li>Enabled recovery of approximately <strong>$16,800</strong> worth of gypsum per day.</li>
+          <li><a href="#" target="_blank" rel="noreferrer">One-page writeup</a> · <a href="#" target="_blank" rel="noreferrer">Photos</a></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3 class="ctitle">Time-of-Flight People Counter (ESP32)</h3>
+        <p class="cmeta">Embedded sensing • Edge-case handling • Wi-Fi data link</p>
+        <p>
+          ESP32-based occupancy tracker that counts entries/exits in real time, including tricky edge cases like partial entries and simultaneous crossings.
+        </p>
+        <ul class="bullets">
+          <li>Wireless occupancy transmission via Wi-Fi to a secondary ESP32 for monitoring/logging.</li>
+          <li>Designed enclosure + electronics integration (sensor, PCB, status LEDs).</li>
+          <li><a href="#" target="_blank" rel="noreferrer">Code</a> · <a href="#" target="_blank" rel="noreferrer">Demo</a></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3 class="ctitle">Robotics Programming (ABB RAPID)</h3>
+        <p class="cmeta">Industrial robotics • Motion sequencing • Automation context</p>
+        <p>
+          Exposure to ABB robot programming using RAPID in an automation context, focusing on structured motion routines and safe operation.
+        </p>
+        <ul class="bullets">
+          <li>Created and modified RAPID routines for repeated task execution and integration with surrounding processes.</li>
+          <li><a href="#" target="_blank" rel="noreferrer">Notes / examples</a></li>
+        </ul>
+      </section>
+
+    </div>
+
+    <h2>Skills</h2>
+    <div class="grid">
+      <section class="card">
+        <p class="cmeta" style="margin:0;">
+          <strong>Controls:</strong> linear systems, feedback control, estimation/filters, hardware validation<br/>
+          <strong>Software:</strong> C/C++, Python, MATLAB, Git/GitHub<br/>
+          <strong>Automation:</strong> PLC/DCS concepts, HMI, sensors + pneumatics, documentation<br/>
+          <strong>Robotics:</strong> ABB RAPID exposure
+        </p>
+      </section>
+    </div>
+
+    <footer class="split">
+      <div>© <span id="y"></span> Pedro Matheus Araujo</div>
+      <div class="small">Last updated: <span id="d"></span></div>
+    </footer>
+  </div>
+
+  <script>
+    const now = new Date();
+    document.getElementById('y').textContent = now.getFullYear();
+    document.getElementById('d').textContent = now.toLocaleDateString();
+  </script>
+</body>
+</html>
