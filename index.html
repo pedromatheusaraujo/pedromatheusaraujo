@@ -45,7 +45,7 @@
           <span class="pill">C/C++</span>
           <span class="pill">Python</span>
           <span class="pill">MATLAB/Simulink</span>
-          <span class="pill">Robotics (ABB RAPID)</span>
+          <span class="pill">RAPID (ABB)</span>
         </div>
 
         <div class="btnrow">
@@ -55,7 +55,7 @@
           <a class="btn" href="araped@umich.edu">Email</a>
         </div>
         <p class="small" style="margin-top:10px;">
-          University of Michigan — BSE Electrical Engineering → Accelerated MSECE (Expected May 2027)
+          University of Michigan — BS Electrical Engineering → Accelerated MSE Electrical & Computer Engineering (Expected May 2027)
         </p>
       </div>
     </header>
@@ -70,34 +70,39 @@
           Developed a closed-loop tuning system that estimates pitch from vibration sensing and drives a DC motor to correct string tension.
         </p>
         <ul class="bullets">
-          <li>Control logic converts pitch error → motor command with stable convergence on real hardware.</li>
-          <li>Handled nonlinearities and noisy measurements through iterative tuning, testing, and filtering.</li>
-          <li><a href="https://drive.google.com/drive/folders/1-McGEksDbiBR0gaoX8BipWCT4mYmqsbd?usp=drive_link" target="_blank" rel="noreferrer">Resources</a>
+          <li>Control logic converts pitch error (measured in cents)→ motor command with stable convergence on real hardware.</li>
+          <li>Handled nonlinearities and noisy measurements through iterative PI tuning, testing, and filtering.</li>
+          <li>Gained experience designing and integrating PCBs, control systems, WiFi, analog sensors, and 3D-printed components</li>
+          <li><a href="https://drive.google.com/drive/folders/1-McGEksDbiBR0gaoX8BipWCT4mYmqsbd?usp=drive_link" target="_blank" rel="noreferrer"> Resources (Documents, Videos, & Code)</a>
       </section>
 
       <section class="card">
         <h3 class="ctitle">Automated Gypsum Scraper-Blade System (Industrial Controls)</h3>
         <p class="cmeta">PLC + DCS synchronization • Sensors + pneumatics • Live plant deployment</p>
         <p>
-          Automated seam detection and blade avoidance on a conveyor belt scraper system to prevent belt damage and improve recovery.
+          Automated seam detection and blade avoidance on a conveyor belt scraper system to prevent belt damage and improve product recovery.
         </p>
         <ul class="bullets">
           <li>Integrated inductive sensing, pneumatic actuation via solenoid control, and manual override controls.</li>
           <li>Added PLC logic through the DCS line to synchronize timing with belt speed and optimize performance.</li>
-          <li>Enabled recovery of approximately <strong>$16,800</strong> worth of gypsum per day.</li>
-          <li><a href="https://drive.google.com/drive/folders/1JG_qD1r4SH3djlqL0upM5SJUKnufpult?usp=sharing" target="_blank" rel="noreferrer">Resources</a>
+          <li>Enabled recovery of approximately <strong>$16,800</strong> worth of gypsum product per day with system installed on two belts.</li>
+          <li>Redlined old documentation to reflect updated system schematics and wire diagrams to maintain version control</li>
+          <li>Presented results at continuous improvement meetings to promote knowledge sharing and support future optimization initiatives</li>
+          <li><a href="https://drive.google.com/drive/folders/1JG_qD1r4SH3djlqL0upM5SJUKnufpult?usp=sharing" target="_blank" rel="noreferrer">Resources (Videos & Schematics)</a>
         </ul>
       </section>
 
       <section class="card">
-        <h3 class="ctitle">Time-of-Flight People Counter (ESP32)</h3>
+        <h3 class="ctitle">Time-of-Flight (ToF) People Counter (ESP32)</h3>
         <p class="cmeta">Embedded sensing • Edge-case handling • Wi-Fi data link</p>
         <p>
-          ESP32-based occupancy tracker that counts entries/exits in real time, including tricky edge cases like partial entries and simultaneous crossings.
+          ESP32-based occupancy tracker mounted above a door frame to count real-time entries and exits, including edge cases such as partial entries and simultaneous crossings.
         </p>
         <ul class="bullets">
-          <li>Wireless occupancy transmission via Wi-Fi to a secondary ESP32 for monitoring/logging.</li>
-          <li>Designed enclosure + electronics integration (sensor, PCB, status LEDs).</li>
+          <li>Detection leveraged a ToF sensor, with characteristic signal patterns used to distinguish entries from exits.”</li>
+          <li>Occupancy data was transmitted wirelessly via Wi-Fi to a secondary ESP32 for monitoring and logging.</li>
+          <li>Designed 3D-printed enclosure + electronics integration (sensor, PCB, status LEDs).</li>
+          <li><a href="https://drive.google.com/drive/folders/1JG_qD1r4SH3djlqL0upM5SJUKnufpult?usp=sharing" target="_blank" rel="noreferrer">Resources (Documents & Code)</a>
         </ul>
       </section>
 
